@@ -5,7 +5,7 @@ echo "Creating target number $1"
 curl 'https://api.qa.probely.dev/targets/?check_fullpath=true' \
   -H 'accept: */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWdpb24iOiJldSIsImp0aSI6InZvTmt0OUxaVG95SiJ9.QUio7UqA4NOjmDth5zvrD7w9izLdvbtGYdUcbw1OkZA' \
+  -H 'authorization: JWT <insert_jwt_token_value_here>' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'origin: http://127.0.0.1:3000' \
