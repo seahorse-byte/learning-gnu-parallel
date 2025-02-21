@@ -42,6 +42,10 @@ parallel echo counting lines';' wc -l ::: file9.txt
 parallel  'echo "It also has : $(openssl rand -hex 32)" >> file{}.txt' ::: {1..10}
 ```
 
+```bash
+parallel  'echo "File {} has unique rsa key: $(openssl genrsa)" >> file{}.txt' ::: {1..10}
+```
+
 # Creating many targets on Probely
 
 ```bash
