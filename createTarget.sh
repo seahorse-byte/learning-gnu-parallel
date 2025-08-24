@@ -2,7 +2,7 @@
 echo "Creating target number $1"
 
 
-curl 'https://api.qa.probely.dev/targets/?check_fullpath=true' \
+curl '<your_api_here>/?check_fullpath=true' \
   -H 'accept: */*' \
   -H 'accept-language: en-US,en;q=0.9' \
   -H 'authorization: JWT <insert_jwt_token_value_here>' \
